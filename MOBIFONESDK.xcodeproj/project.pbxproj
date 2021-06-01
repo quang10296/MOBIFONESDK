@@ -16,6 +16,7 @@
 		184EBAEF2665E58100031245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EBAED2665E58100031245 /* Main.storyboard */; };
 		184EBAF12665E58200031245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184EBAF02665E58200031245 /* Assets.xcassets */; };
 		184EBAF42665E58200031245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EBAF22665E58200031245 /* LaunchScreen.storyboard */; };
+		184EBAFD2665EFBE00031245 /* MOBIFONESDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EBAFC2665EFBE00031245 /* MOBIFONESDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		184EBAF02665E58200031245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184EBAF32665E58200031245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184EBAF52665E58200031245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184EBAFC2665EFBE00031245 /* MOBIFONESDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOBIFONESDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				184EBAC82665E4F200031245 /* MOBIFONESDK.h */,
 				184EBAC92665E4F200031245 /* Info.plist */,
+				184EBAFC2665EFBE00031245 /* MOBIFONESDK.swift */,
 			);
 			path = MOBIFONESDK;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					184EBAC42665E4F200031245 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					184EBACD2665E4F200031245 = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184EBAFD2665EFBE00031245 /* MOBIFONESDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		184EBADA2665E4F200031245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BRS8TT2752;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Quang.MOBIFONESDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		184EBADB2665E4F200031245 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BRS8TT2752;
@@ -486,6 +494,7 @@
 		184EBADD2665E4F200031245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRS8TT2752;
 				INFOPLIST_FILE = MOBIFONESDKTests/Info.plist;
@@ -504,6 +513,7 @@
 		184EBADE2665E4F200031245 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRS8TT2752;
 				INFOPLIST_FILE = MOBIFONESDKTests/Info.plist;

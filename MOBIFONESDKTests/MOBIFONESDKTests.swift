@@ -10,12 +10,18 @@ import XCTest
 
 class MOBIFONESDKTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var mobifoneSDKTests: MOBIFONESDK!
+
+    override func setUp() {
+        mobifoneSDKTests = MOBIFONESDK()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testAdd() {
+        XCTAssertEqual(mobifoneSDKTests.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(mobifoneSDKTests.sub(a: 2, b: 1), 1)
     }
 
     func testExample() throws {
